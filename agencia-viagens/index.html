@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agência de Viagens</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Agência de Viagens</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destinos">Destinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/alamanha.jpeg" class="d-block w-100" alt="Alemanha" loading="lazy">
+            <div class="carousel-caption text-center">
+              <h1>Explore o Mundo</h1>
+              <p>Descubra a beleza e a história da Alemanha.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/canada.jpeg" class="d-block w-100" alt="Canadá" loading="lazy">
+            <div class="carousel-caption text-center">
+              <h1>Explore o Mundo</h1>
+              <p>Explore as paisagens deslumbrantes do Canadá.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/inglatarre.jpg" class="d-block w-100" alt="Inglaterra" loading="lazy">
+            <div class="carousel-caption text-center">
+              <h1>Explore o Mundo</h1>
+              <p>Conheça a terra da rainha e sua rica cultura.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="destinos" class="container my-5">
+      <h2 class="text-center mb-4">Destinos Populares</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card">
+            <img src="img/paris.jpeg" class="card-img-top" alt="Paris" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Paris</h5>
+              <p class="card-text">Conheça a cidade mais romântica do mundo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card">
+            <img src="img/tokyo.jpg" class="card-img-top" alt="Tóquio" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Tóquio</h5>
+              <p class="card-text">Explore a cultura e tecnologia do Japão.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card">
+            <img src="img/dubai.jpeg" class="card-img-top" alt="Dubai" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Dubai</h5>
+              <p class="card-text">Experimente o luxo e inovação nos Emirados.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card">
+            <img src="img/new_york.jpeg" class="card-img-top" alt="Nova York" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Nova York</h5>
+              <p class="card-text">Viva o ritmo da cidade que nunca dorme.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Sobre Nós</h2>
+        <p class="text-center">Somos uma agência de viagens dedicada a proporcionar experiências únicas e inesquecíveis para nossos clientes. Com anos de experiência no mercado, oferecemos os melhores destinos e pacotes personalizados para atender às suas necessidades.</p>
+      </div>
+    </section>
+
+    <section id="contato" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Entre em Contato</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2025 Agência de Viagens. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
